@@ -1,0 +1,96 @@
+/* -------- General -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Montserrat'; }
+
+body {
+  background-color: #363F4C; }
+
+.container {
+  width: 95%;
+  max-width: 60em;
+  margin: 0 auto; }
+
+.container-about {
+  width: 95%;
+  max-width: 40em;
+  margin: 0 auto; }
+
+/* -------- START Intro Section -------- */
+#intro {
+  position: relative;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45em;
+  width: 100%; }
+  #intro:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(54, 63, 76, 0.3) -10%, #363f4c 90%); }
+  #intro .intro-title {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%); }
+    #intro .intro-title h1 {
+      color: #363F4C;
+      font-weight: 700;
+      font-size: 3.4rem;
+      line-height: 1.5; }
+      #intro .intro-title h1 .title-wrap {
+        display: block; }
+        #intro .intro-title h1 .title-wrap .title-up,
+        #intro .intro-title h1 .title-wrap .title-down {
+          background-color: #FBFCFF;
+          padding: .04em .2em; }
+
+/* -------- END Intro Section -------- */
+/* -------- BEGIN About Section -------- */
+#about {
+  position: relative; }
+  #about .about-box {
+    position: relative;
+    margin-bottom: 17em; }
+    #about .about-box h2 {
+      position: absolute;
+      color: #EF233C;
+      font-size: 3.6rem;
+      top: 5%;
+      left: 25%; }
+      #about .about-box h2 span {
+        display: block; }
+    #about .about-box img {
+      width: 13em; }
+    #about .about-box .about-text-box {
+      color: #FBFCFF;
+      position: absolute;
+      right: 1%;
+      bottom: -11em;
+      width: 60%;
+      line-height: 1.7; }
+      #about .about-box .about-text-box p:first-of-type {
+        margin-bottom: 2em; }
+
+/* -------- END About Section -------- */
+/* -------- BEGIN Portfolio Section -------- */
+#portfolio .container {
+  border-top: 1px solid #FBFCFF; }
+#portfolio h2 {
+  color: #5F7087;
+  font-size: 3rem;
+  margin: .8em 0; }
+#portfolio img {
+  width: 100%; }
+
+/* -------- END Portfolio Section -------- */
+
+/*# sourceMappingURL=style.css.map */

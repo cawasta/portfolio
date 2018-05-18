@@ -1,0 +1,121 @@
+/* -------- General -------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Montserrat';
+}
+body {background-color: #363F4C;}
+.container {
+  width: 95%;
+  max-width: 60em;
+  margin: 0 auto;
+}
+.container-about {
+  width: 95%;
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+/* -------- START Intro Section -------- */
+#intro {
+  position: relative;
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 45em;
+  width: 100%;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgba(54, 63, 76, .3) -10%, rgba(54, 63, 76, 1) 90%);
+  }
+
+  .intro-title {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    h1 {
+      color: #363F4C;
+      font-weight: 700;
+      font-size: 3.4rem;
+      line-height: 1.5;
+
+      .title-wrap {
+        display: block;
+
+        .title-up,
+        .title-down {
+          background-color: #FBFCFF;
+          padding: .04em .2em;
+        }
+      }
+    }
+  }
+}
+/* -------- END Intro Section -------- */
+
+/* -------- BEGIN About Section -------- */
+#about {
+  position: relative;
+
+  .about-box {
+    position: relative;
+    margin-bottom: 17em;
+
+    h2 {
+      position: absolute;
+      color: #EF233C;
+      font-size: 3.6rem;
+      top: 5%;
+      left: 25%;
+
+      span {
+        display: block;
+      }
+    }
+    img {
+      width: 13em;
+    }
+
+    .about-text-box {
+      color: #FBFCFF;
+      position: absolute;
+      right: 1%;
+      bottom: -11em;
+      width: 60%;
+      line-height: 1.7;
+
+      p:first-of-type {
+        margin-bottom: 2em;
+      }
+    }
+  }
+}
+/* -------- END About Section -------- */
+
+/* -------- BEGIN Portfolio Section -------- */
+#portfolio {
+  & .container {
+    border-top: 1px solid #FBFCFF;
+  }
+
+  h2 {
+    color: #5F7087;
+    font-size: 3rem;
+    margin: .8em 0;
+  }
+  img {
+    width: 100%;
+  }
+}
+/* -------- END Portfolio Section -------- */

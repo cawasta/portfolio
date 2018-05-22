@@ -12,7 +12,7 @@ body {
 
 .container {
   width: 95%;
-  max-width: 60em;
+  max-width: 70em;
   margin: 0 auto; }
 
 .container-about {
@@ -20,13 +20,18 @@ body {
   max-width: 40em;
   margin: 0 auto; }
 
+#portfolio h2, #contact h2 {
+  color: #5F7087;
+  font-size: 3rem;
+  margin: .8em 0; }
+
 /* -------- START Intro Section -------- */
 #intro {
   position: relative;
   background-image: url("../img/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 45em;
+  height: 40em;
   width: 100%; }
   #intro:before {
     content: '';
@@ -82,15 +87,124 @@ body {
 
 /* -------- END About Section -------- */
 /* -------- BEGIN Portfolio Section -------- */
-#portfolio .container {
-  border-top: 1px solid #FBFCFF; }
-#portfolio h2 {
-  color: #5F7087;
-  font-size: 3rem;
-  margin: .8em 0; }
-#portfolio img {
-  width: 100%; }
+#portfolio {
+  margin-bottom: 5em; }
+  #portfolio .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em; }
+  #portfolio .container {
+    border-top: 1px solid #FBFCFF; }
+  #portfolio img {
+    width: 100%; }
+  #portfolio .portfolio-item {
+    position: relative; }
+    #portfolio .portfolio-item .portfolio-description {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #FBFCFF;
+      text-align: center;
+      padding: 1.3em 0;
+      color: #242A33; }
+      #portfolio .portfolio-item .portfolio-description p {
+        font-size: 1.2rem;
+        margin-bottom: 2em; }
+      #portfolio .portfolio-item .portfolio-description .portfolio-button {
+        border: 1px solid #242A33;
+        font-size: .89rem;
+        padding: .3em 1.6em;
+        color: #242A33; }
 
 /* -------- END Portfolio Section -------- */
+/* -------- START Contact Section -------- */
+#contact {
+  text-align: center;
+  color: #FBFCFF;
+  margin-bottom: 3.5em; }
+  #contact .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2em; }
+  #contact .container {
+    border-top: 1px solid #FBFCFF; }
+  #contact h2 {
+    text-align: left; }
+  #contact p, #contact a {
+    color: #FBFCFF;
+    font-size: 1.3rem; }
+  #contact img {
+    margin-bottom: 2em; }
+
+/* -------- END Contact Section -------- */
+/* -------- START RESPONSIVE -------- */
+@media (max-width: 800px) {
+  #intro {
+    height: 100vh; }
+
+  #portfolio .portfolio-grid {
+    grid-template-columns: 1fr; }
+  #portfolio .portfolio-item {
+    margin-bottom: 2em; }
+
+  #contact .contact-grid {
+    grid-template-columns: 1fr; }
+  #contact .contact-item {
+    margin-bottom: 4em; }
+    #contact .contact-item p, #contact .contact-item a {
+      display: block;
+      letter-spacing: .1em; } }
+@media (max-width: 600px) {
+  #intro .intro-title h1 {
+    font-size: 2.4rem; }
+
+  #about .about-box {
+    margin-bottom: 3em; }
+    #about .about-box h2 {
+      font-size: 2.5rem;
+      top: 30%; }
+    #about .about-box .about-text-box {
+      margin-top: 2em;
+      position: relative;
+      bottom: unset;
+      width: 100%; }
+
+  #portfolio {
+    margin-bottom: 3em; }
+    #portfolio h2 {
+      font-size: 2.3rem; }
+    #portfolio .portfolio-description {
+      padding: 1em 0 !important; }
+      #portfolio .portfolio-description p {
+        margin-bottom: 1.1em !important; }
+
+  #contact {
+    margin-bottom: 3em; }
+    #contact h2 {
+      font-size: 2.3rem; }
+    #contact img {
+      width: 44%; }
+    #contact p, #contact a {
+      font-size: 1rem; } }
+@media (max-width: 330px) {
+  #intro .intro-title h1 {
+    font-size: 1.7rem; }
+
+  #about .about-box h2 {
+    font-size: 2.2rem;
+    top: 27%; }
+  #about .about-box img {
+    width: 12em; }
+
+  #portfolio .portfolio-item .portfolio-description p {
+    font-size: 1rem; }
+
+  #portfolio .portfolio-item .portfolio-description .portfolio-button {
+    font-size: .8rem; }
+
+  #portfolio h2, #contact h2 {
+    font-size: 2rem; } }
+/* -------- END RESPONSIVE -------- */
 
 /*# sourceMappingURL=style.css.map */

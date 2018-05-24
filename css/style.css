@@ -75,6 +75,9 @@ body {
         display: block; }
     #about .about-box img {
       width: 13em; }
+    #about .about-box a {
+      color: #EF233C;
+      font-weight: 700; }
     #about .about-box .about-text-box {
       color: #FBFCFF;
       position: absolute;
@@ -110,7 +113,7 @@ body {
       color: #242A33; }
       #portfolio .portfolio-item .portfolio-description p {
         font-size: 1.2rem;
-        margin-bottom: 2em; }
+        margin-bottom: 1em; }
       #portfolio .portfolio-item .portfolio-description .portfolio-button {
         border: 1px solid #242A33;
         font-size: .89rem;

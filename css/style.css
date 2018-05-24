@@ -76,8 +76,10 @@ body {
     #about .about-box img {
       width: 13em; }
     #about .about-box a {
-      color: #EF233C;
-      font-weight: 700; }
+      color: #5F7087;
+      font-weight: 700;
+      #
+      letter-spacing: .05rem; }
     #about .about-box .about-text-box {
       color: #FBFCFF;
       position: absolute;

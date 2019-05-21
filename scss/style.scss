@@ -5,9 +5,11 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
-body {background-color: #363F4C;}
+body {
+  background-color: #363f4c;
+}
 .container {
   width: 95%;
   max-width: 70em;
@@ -18,31 +20,36 @@ body {background-color: #363F4C;}
   max-width: 40em;
   margin: 0 auto;
 }
-#portfolio, #contact {
+#portfolio,
+#contact {
   h2 {
-    color: #5F7087;
+    color: #5f7087;
     font-size: 3rem;
-    margin: .8em 0;
+    margin: 0.8em 0;
   }
 }
 
 /* -------- START Intro Section -------- */
 #intro {
   position: relative;
-  background-image: url('../img/bg.jpg');
+  background-image: url("../img/bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 40em;
   width: 100%;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom, rgba(54, 63, 76, .3) -10%, rgba(54, 63, 76, 1) 90%);
+    background-image: linear-gradient(
+      to bottom,
+      rgba(54, 63, 76, 0.3) -10%,
+      rgba(54, 63, 76, 1) 90%
+    );
   }
 
   .intro-title {
@@ -52,7 +59,7 @@ body {background-color: #363F4C;}
     transform: translateY(-50%);
 
     h1 {
-      color: #363F4C;
+      color: #363f4c;
       font-weight: 700;
       font-size: 3.4rem;
       line-height: 1.5;
@@ -62,8 +69,8 @@ body {background-color: #363F4C;}
 
         .title-up,
         .title-down {
-          background-color: #FBFCFF;
-          padding: .04em .2em;
+          background-color: #fbfcff;
+          padding: 0.04em 0.2em;
         }
       }
     }
@@ -81,7 +88,7 @@ body {background-color: #363F4C;}
 
     h2 {
       position: absolute;
-      color: #EF233C;
+      color: #ef233c;
       font-size: 3.6rem;
       top: 5%;
       left: 25%;
@@ -96,13 +103,19 @@ body {background-color: #363F4C;}
     }
 
     a {
-      color: #5F7087;
-      font-weight: 700;#
-      letter-spacing: .05rem;
+      color: #5f7087;
+      font-weight: 700;
+      letter-spacing: 0.05rem;
+
+      &:hover {
+        color: #657c9b;
+      }
+
+      transition: all ease-in-out 250ms;
     }
 
     .about-text-box {
-      color: #FBFCFF;
+      color: #fbfcff;
       position: absolute;
       right: 1%;
       bottom: -11em;
@@ -128,7 +141,7 @@ body {background-color: #363F4C;}
   }
 
   & .container {
-    border-top: 1px solid #FBFCFF;
+    border-top: 1px solid #fbfcff;
   }
 
   img {
@@ -143,21 +156,30 @@ body {background-color: #363F4C;}
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: #FBFCFF;
+      background-color: #fbfcff;
       text-align: center;
-      padding: 1.3em 0;
-      color: #242A33;
+      padding: 1em 0 1.4em 0;
+      opacity: 0.9;
 
       p {
         font-size: 1.2rem;
         margin-bottom: 1em;
+        color: #242a33;
+        font-weight: normal;
       }
 
       .portfolio-button {
-        border: 1px solid #242A33;
-        font-size: .89rem;
-        padding: .3em 1.6em;
-        color: #242A33;
+        border: 1px solid #242a33;
+        font-size: 0.89rem;
+        padding: 0.3em 1.6em;
+        color: #242a33;
+
+        &:hover {
+          color: #657c9b;
+          border-color: #657c9b;
+        }
+
+        transition: all ease-in-out 250ms;
       }
     }
   }
@@ -167,7 +189,7 @@ body {background-color: #363F4C;}
 /* -------- START Contact Section -------- */
 #contact {
   text-align: center;
-  color: #FBFCFF;
+  color: #fbfcff;
   margin-bottom: 3.5em;
 
   .contact-grid {
@@ -177,15 +199,16 @@ body {background-color: #363F4C;}
   }
 
   & .container {
-    border-top: 1px solid #FBFCFF;
+    border-top: 1px solid #fbfcff;
   }
 
   h2 {
     text-align: left;
   }
 
-  p, a {
-    color: #FBFCFF;
+  p,
+  a {
+    color: #fbfcff;
     font-size: 1.3rem;
   }
 
@@ -199,7 +222,7 @@ body {background-color: #363F4C;}
 @media (max-width: 800px) {
   #intro {
     height: 100vh;
-}
+  }
   #portfolio {
     .portfolio-grid {
       grid-template-columns: 1fr;
@@ -218,9 +241,10 @@ body {background-color: #363F4C;}
     .contact-item {
       margin-bottom: 4em;
 
-      p, a {
+      p,
+      a {
         display: block;
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
       }
     }
   }
@@ -288,7 +312,8 @@ body {background-color: #363F4C;}
       width: 44%;
     }
 
-    p, a {
+    p,
+    a {
       font-size: 1rem;
     }
   }
@@ -330,15 +355,15 @@ body {background-color: #363F4C;}
     .portfolio-item {
       .portfolio-description {
         .portfolio-button {
-          font-size: .8rem;
+          font-size: 0.8rem;
         }
       }
     }
   }
 
-  #portfolio h2, #contact h2 {
+  #portfolio h2,
+  #contact h2 {
     font-size: 2rem;
   }
-
 }
 /* -------- END RESPONSIVE -------- */
